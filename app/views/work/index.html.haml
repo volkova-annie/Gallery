@@ -1,0 +1,56 @@
+.container
+  .row
+    .col-md-12
+      .text-center
+        %h2.up-theme{:title => t('.theme_name')}
+          #{@selected_theme}
+        .left_controls
+          .select_theme
+            = render 'button_theme_select', locale:@current_locale
+            %br
+  .row.image
+    .col-md-12
+      .col-md-8
+        .text-center
+          %h2.up{:title => "Image file name"}
+            #{@selected_image_name}
+          .col-md-1
+            .img-left-side
+              %h3{:title => "list to previous image"}
+                %i.fa.fa-chevron-circle-left.strong
+          .col-md-10
+            .img-center{:title => "Default image"}
+              %img{:alt => "Default Image", :src => '/assets/pictures/welcomeB300x180.jpg', :title => "Default image",:style => "width:100%; height:100%;" }
+          .col-md-1
+            .img-right-side
+              %h3{:title => "list to next image"}
+                %i.fa.fa-chevron-circle-right  
+      .col-md-4
+        .text-center
+          %h2.down{:title => "Stats"}
+            = t(".show_stats")
+          %span.total_values
+            = t('.total_values')
+            %h2.total{:title => "Total values"} #{@values_qty.round}
+
+          %span.common_value
+            = t('.common_value')
+            %h2.common{:title => "Common value"}
+          %span.my_value
+            = t('.my_value')
+            %h2.image_user_value{:title => "Expert value"}
+          %br
+          .image_diag
+            %h2.down{:title => "Value scale"}
+              = t(".make_decision")
+            %h2#chosen_value 50
+            %p#slider
+              %input#slide{:max => "100", :min => "1", :value => "50",
+                         :onchange => "updateSlider(this.value)",
+                         :step => "5", :type => "range"}
+            %button.button__results.save{:title => "Save image diag results"}
+              %a{"data-remote" => "true", :format => "js", :href => "#", :title => "Save image diag results"}
+                = t(".save_decision")
+          
+
+          

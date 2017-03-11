@@ -1,0 +1,31 @@
+%header
+  %nav.navbar.navbar-inverse
+    .container
+      .container-fluid
+        .navbar-header
+          %p.locale
+          -#.ru_link
+          = link_to image_tag("ru_flag.png", alt: "", style: "width:18%; padding-right:5px;", title: "Русский" ), locale: :ru
+          = link_to image_tag("en_flag.png", alt: "",  style: "width:20%", title: "English"), locale: :en
+          %b
+            = I18n.locale
+        %ul.nav.navbar-nav
+          %li
+            =link_to t('.home'), about_path
+        %ul.nav.navbar-nav.pull-right
+          -if signed_in?
+            %li
+              = link_to t('.work'), work_path
+
+            / %li 
+            / #{current_user.name}
+            / = gravatar_for current_user
+            %li
+              = link_to t('.profile'), current_user
+            / %li.divider
+            %li
+              = link_to t('.sign_out'), signout_path, method: "delete"
+          -else
+            %li= link_to t('.sign_in'), signin_path
+
+

@@ -1,0 +1,76 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+ru:
+    shared:
+        header:
+            logo_title: "Experteese на Rails"
+            home: "Главная"
+            help: "Помощь"
+            about: "O проекте"
+            sign_in: "Войти"
+            sign_out: "Выйти"
+            person: "Я"
+            profile: "Личный кабинет"
+            settings: "Настройки"
+            work: "Экспертиза"
+            contact: "Контакты"
+
+        footer: 
+
+    users:
+        form:
+          name: "Имя"
+          email: "E-mail"
+          password: "Пароль"
+          password_confirmation: "Подтвердить пароль"
+          create_account: "Создать аккаунт"
+          work: "Экспертиза"
+        new:
+            new_user: "Регистрация"
+        show:
+          email: "E-mail"
+          work: "Экспертиза"
+    main:
+        about:
+          welcome: "Добро пожаловать в приложение!"
+          work: "Экспертиза"
+    sessions:
+        new:
+          sign_in: "Вход"
+          sign_up: "Регистрация"
+          email: "E-mail"
+          password: "Пароль"
+          new_user?: "Еще не зарегистрированы?"
+    work:
+        index:
+            def_select_theme: "Что вы хотите оценить?"
+            choose: "Выбрать тему"
+            show_stats: "Показать статистику"
+            total_values: "Все оценки"
+            common_value: "Средняя оценка"
+            my_value: "Моя оценка"
+            make_decision: "Оценить"
+            save_decision: "Сохранить"
+        button_theme_select:
+            select_theme_bt: "Выберите тему"
+        choose_theme_from_arr:
+            default_select: "Выберите тему"
+

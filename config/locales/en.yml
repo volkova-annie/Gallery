@@ -1,0 +1,75 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+    shared:
+        header:
+            logo_title: "Experteese in Ruby_on_Rails"
+            home: "Home"
+            help: "Help"
+            about: "About"
+            sign_in: "Sign in"
+            sign_out: "Sign out"
+            person: "Me"
+            profile: "Dashboard"
+            settings: "Settings"
+            work: "Experteese"
+            contact: "Contacts"
+        footer: 
+            made_with: "Made with"
+    users:
+        form:
+            name: "Name"
+            email: "E-mail"
+            password: "Password"
+            password_confirmation: "Password confirmation"
+            create_account: "Create my account"
+            work: "Experteese"
+        new:
+            new_user: "New User"
+        show:
+            email: "E-mail"
+            work: "Experteese"
+    main:
+        about:
+            welcome: "Welcome to the Experteese!"
+            work: "Experteese"
+    sessions:
+        new:
+          sign_in: "Sign in"
+          sign_up: "Sign up"
+          email: "E-mail"
+          password: "Password"
+          new_user?: "Not registered?"
+    work:
+        index:
+            def_select_theme: "What do you want to value?"
+            choose: "Choose theme"
+            show_stats: "Statistics"
+            total_values: "Total values"
+            common_value: "Average value"
+            my_value: "My value"
+            make_decision: "Make decision"
+            save_decision: "Save"
+        button_theme_select:
+            select_theme_bt: "Select theme"
+        choose_theme_from_arr:
+            default_select: "Select theme"
